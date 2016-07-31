@@ -1,5 +1,5 @@
 # xiaodiFTP
-自己做的在线ftp
+自己做的在线todolist
 
 ##使用技术
 + 前端	`Angular`
@@ -10,3 +10,11 @@
 
 ##起始原因
 阿里面试
+
+##运行
+```
+npm install
+bower install
+gulp serve
+
+```
