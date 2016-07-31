@@ -1,0 +1,21 @@
+<div class="container" ng-controller="mainController">
+    <div class="row ">
+        <div class="col-md-2 "></div>
+        <div class="col-md-8 ">
+            <ul class="list-group ">
+                <li ng-repeat="item in todoItems " class="list-group-item ">
+                    <div class="item ">
+                        <input type="checkbox" ng-model="item.done" />
+                        <label class="item-content " ng-class="{ 'item-done': item.done} ">{{item.content}}</label>
+                        <a href ng-click="removeItem(item); " class="item-remove glyphicon glyphicon-remove " aria-hidden="true "></a>
+                    </div>
+                </li>
+            </ul>
+            <form name="addForm " class="form-inline " ng-submit="addForm.$valid && addItem(); " novalidate>
+                <input type="text " class="form-control " ng-model="content " required/>
+                <button type="submit " class="btn btn-success "><i class='glyphicon glyphicon-plus'></i></button>
+            </form>
+        </div>
+        <div class="col-md-2 "></div>
+    </div>
+</div>

@@ -1,0 +1,33 @@
+.item input[type='checkbox'] {
+  appearance: none;
+  -webkit-appearance: none;
+  display: inline-block;
+  border: 1px solid #aaa;
+  overflow: hidden;
+  vertical-align: middle;
+  margin-top: -6px;
+  width: 16px;
+  height: 16px;
+  outline: 0;
+}
+.item input[type='checkbox']:checked:before {
+  content: '✓';
+  font-size: 16px;
+  text-align: center;
+  line-height: 16px;
+  color: #00a8e6;
+}
+.item .item-done {
+  text-decoration: line-through;
+}
+.item .item-content {
+  font-size: 20px;
+}
+.item .item-remove {
+  float: right;
+  text-decoration: none;
+  display: none;
+}
+.item:hover .item-remove {
+  display: inline;
+}
